@@ -33,6 +33,10 @@ while shape.lower() != "stop":
     #   Iterate through each row up to the height
     #   In each row, print '*' for the number of times equal to the height
     #   This will create a square
+    if shape.lower() == "square":
+        for row in range(1, height+1):
+            print('*'*height)
+
 
     # For printing a pyramid:
     # If the shape is not "triangle" or "square":
