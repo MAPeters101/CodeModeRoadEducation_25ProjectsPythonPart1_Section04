@@ -22,6 +22,11 @@ while shape.lower() != "stop":
     #   Iterate through each row up to the height
     #   In each row, print '*' for the number of times equal to the row number
     #   This will create a right triangle
+    if shape.lower() == "triangle":
+        for row in range(1, height+1):
+            for col in range(row):
+                print('*',end='')
+            print()
 
     # For printing a square:
     # If the shape is "square":
