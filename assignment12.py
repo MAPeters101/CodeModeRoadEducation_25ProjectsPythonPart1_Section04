@@ -44,5 +44,8 @@ while shape.lower() != "stop":
     #   In each row, print spaces for the number of times equal to (height - row number)
     #   Then print '*' for the number of times equal to (2 * row number - 1)
     #   This will create a pyramid with spaces and '*'s
+    if shape.lower() == "pyramid":
+        for row in range(1, height+1):
+            print(' '*(height-row), '*'*(2*row-1), sep='')
 
 
